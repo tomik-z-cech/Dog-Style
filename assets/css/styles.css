@@ -1,3 +1,77 @@
-body {
-    background-color: aqua;
+/** -------------------------------- IMPORTS -------------------------------- **/
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap'); /** Agbalumo **/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap'); /** Josefin Sans **/
+
+/** VARIABLES **/
+
+:root{
+
+    /** COLOR PALETTE **/
+    --light-pink: #d77fbd;
+    --dark-pink: #ed02ba;
+    --dark-pink-trans: rgba(237, 2, 186, 0.85);
+    --light-purple: #873776;
+    --dark-purple: #54334d;
+    --text-color: #381c32;   
+     
+    /** FONTS **/
+    --header-font: 'Agbalumo', sans-serif;
+    --text-font: 'Monofett', arial;
+}
+
+/** ------------------------------------------------------------------------------- **/
+/** ------------------------ 1920 * 1080 OPTIMIZED  ------------------------------- **/
+/** ------------------------------------------------------------------------------- **/
+
+/** -------------------------------- GENERAL -------------------------------- **/
+
+* {/** Set general margin, padding, border **/
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body {/** Set general background color and font **/
+    background-color: var(--light-pink);
+    font-family: var(--text-font);
+}
+.header-footer {/** Set height, width, position and background color to header and footer **/
+    background-color: var(--dark-pink-trans);
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 1;
+    display: flex;	
+    align-items: center;	
+    justify-content: space-between;
+}
+
+/** -------------------------------- HEADER -------------------------------- **/
+#logo{
+    max-width: 60%;
+    margin-left: 2%;
+}
+#logo-container{
+    width: 20%;
+}
+.active-page {/** Menu **/
+    border-bottom: 1px solid #58483a;
+}	
+#hamburger, #hamburger-menu label {/** Hamburger menu display **/
+    display: none;	
+}	
+#menu {/** Menu - box**/
+    font-size: 130%;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-family: var(--header-font);
+    letter-spacing: 1px;
+}
+#menu a {/** Menu - links **/
+    color: inherit;
+    text-decoration: none;
+    margin-right: 45px;
+}
+#menu a:hover {/** Menu - links - event:hover **/
+    border-bottom: 1px solid var(--dark-purple);
+    color: var(--dark-purple);
 }

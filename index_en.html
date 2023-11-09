@@ -3,12 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <title>Dog Style | Home</title>
 </head>
 <body>
-    <script src="assets/libs/bootstrap/js/bootstrap.js"></script>
+    <header> <!-- Set header -->
+        <div class="header-footer"> <!-- Header outer container -->
+            <div id="logo-container">
+                <a href="index.html">  <!-- Logo -->
+                    <img src="assets/images/logo.png" id="logo">
+                </a>
+            </div>
+            <nav id="hamburger-menu">	<!-- Hamburger menu - only relevant at width less 1140px -->
+                <label for="hamburger">&#9776;</label>	
+                <input type="checkbox" id="hamburger">	
+                <div id="menu">	<!-- Menu -->
+                    <a href="touch_en.html">Get in Touch!</a>	
+                    <a href="index_en.html" class="active-page">Home</a>	
+                    <a href="services_en.html">Services</a>	
+                    <a href="conatct_en.html">Contact</a>	
+                    <a href="gallery_en.html">Gallery</a>	
+                </div>
+            </nav>	
+        </div>
+    </header>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
