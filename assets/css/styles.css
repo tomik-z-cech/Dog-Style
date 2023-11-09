@@ -16,7 +16,7 @@
      
     /** FONTS **/
     --header-font: 'Agbalumo', sans-serif;
-    --text-font: 'Monofett', arial;
+    --text-font: 'Josefin Sans', arial;
 }
 
 /** ------------------------------------------------------------------------------- **/
@@ -34,44 +34,22 @@ body {/** Set general background color and font **/
     background-color: var(--light-pink);
     font-family: var(--text-font);
 }
-.header-footer {/** Set height, width, position and background color to header and footer **/
-    background-color: var(--dark-pink-trans);
-    width: 100%;
-    height: 100px;
-    position: fixed;
-    z-index: 1;
-    display: flex;	
-    align-items: center;	
-    justify-content: space-between;
-}
 
-/** -------------------------------- HEADER -------------------------------- **/
+/** -------------------------------- HEADER & FOOTER -------------------------- **/
+
 #logo{
-    max-width: 60%;
-    margin-left: 2%;
+    max-width: 200px;
 }
-#logo-container{
-    width: 20%;
+.navbar-expand-lg .navbar-collapse {
+    position: absolute;
+    right: 2%;
 }
-.active-page {/** Menu **/
-    border-bottom: 1px solid #58483a;
-}	
-#hamburger, #hamburger-menu label {/** Hamburger menu display **/
-    display: none;	
-}	
-#menu {/** Menu - box**/
-    font-size: 130%;
-    text-transform: uppercase;
-    color: var(--text-color);
+#navbar{
+    background-color: var(--dark-pink-trans);
+}
+.header-text{
     font-family: var(--header-font);
-    letter-spacing: 1px;
 }
-#menu a {/** Menu - links **/
-    color: inherit;
-    text-decoration: none;
-    margin-right: 45px;
-}
-#menu a:hover {/** Menu - links - event:hover **/
-    border-bottom: 1px solid var(--dark-purple);
-    color: var(--dark-purple);
+.active{
+    border-bottom: 2px solid var(--text-color);
 }
