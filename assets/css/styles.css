@@ -37,12 +37,15 @@ body {/** Set general background color and font **/
 
 /** -------------------------------- HEADER & FOOTER -------------------------- **/
 
+.navbar-expand-xl .navbar-collapse {
+    position: absolute;
+    right: 1%;
+}
 #logo{
     max-width: 200px;
 }
-.navbar-expand-lg .navbar-collapse {
-    position: absolute;
-    right: 2%;
+.hor-break{
+    display: none;
 }
 #navbar{
     background-color: var(--dark-pink-trans);
@@ -52,4 +55,17 @@ body {/** Set general background color and font **/
 }
 .active{
     border-bottom: 2px solid var(--text-color);
+}
+
+@media screen and (min-width: 100px) and (max-width: 1199px) { 
+    .navbar-expand-xl .navbar-collapse {
+        position: relative;
+        right: 1%;
+    }
+    .hor-break{
+        display: flex;
+    }
+    #hide-small{
+        display: none;
+    }
 }
