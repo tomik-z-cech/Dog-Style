@@ -54,6 +54,7 @@ body {/** Set general background color and font **/
 }
 .header-text{
     font-family: var(--header-font);
+    font-size: 160%;
 }
 .active{
     border-bottom: 2px solid var(--text-color);
@@ -79,22 +80,36 @@ body {/** Set general background color and font **/
 
 /** -------------------------------- FOOTER -------------------------- **/
 
-  footer {
+footer {
     background-color: var(--dark-pink-trans);
     padding: 5px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
     font-family: var(--header-font);
-  }
+}
 
-  footer a{
+footer a{
     text-decoration: none;
     color: var(--text-color);
-  }
+}
 
-  footer a:hover{
+footer a:hover{
     text-decoration: none;
     color: var(--off-black);
     border-bottom: 1px solid var(--off-black);
-  }
+}
+.footer-text{
+    font-family: var(--header-font);
+    font-size: 140%;
+}
+@media screen and (min-width: 801px) and (max-width: 999px) { 
+    .footer-text{
+        font-size: 100%;
+    }
+}
+@media screen and (min-width: 100px) and (max-width: 800px) { 
+    .footer-text{
+        font-size: 80%;
+    }
+}

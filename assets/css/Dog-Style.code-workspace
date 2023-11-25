@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"name": "Dog-Style",
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"files.autoSave": "off",
+		"workbench.colorTheme": "Visual Studio Dark",
+		"terminal.integrated.gpuAcceleration": "canvas",
+		"liveServer.settings.multiRootWorkspaceName": "assets"
+	}
+}
