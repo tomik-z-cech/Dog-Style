@@ -14,7 +14,7 @@
     --dark-purple: #54334d;
     --text-color: #381c32;
     --off-black: #111111;
-     
+    
     /** FONTS **/
     --header-font: 'Agbalumo', sans-serif;
     --text-font: 'Josefin Sans', arial;
@@ -34,7 +34,6 @@
 body {/** Set general background color and font **/
     background-color: var(--light-pink);
     font-family: var(--text-font);
-    margin-bottom: 60px;
 }
 
 /** -------------------------------- HEADER -------------------------- **/
@@ -81,10 +80,10 @@ body {/** Set general background color and font **/
 /** -------------------------------- FOOTER -------------------------- **/
 
 footer {
+    position: relative;
+    bottom: 0;
     background-color: var(--dark-pink-trans);
     padding: 5px 0;
-    position: fixed;
-    bottom: 0;
     width: 100%;
     font-family: var(--header-font);
 }
@@ -111,5 +110,22 @@ footer a:hover{
 @media screen and (min-width: 100px) and (max-width: 800px) { 
     .footer-text{
         font-size: 80%;
+    }
+}
+
+/* ------------------------- HOME --------------------------------- */
+
+
+@media (orientation: portrait) {
+    .wrapper {
+        background: url('../images/image3.png') no-repeat fixed top right / cover;
+        min-height: 78vh;
+    }
+}
+
+@media (orientation: landscape) {
+    .wrapper {
+        background: url('../images/image3-land.png') no-repeat fixed top right / cover;
+        min-height: 78vh;
     }
 }
