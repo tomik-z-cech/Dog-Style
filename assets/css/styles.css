@@ -8,6 +8,7 @@
 
     /** COLOR PALETTE **/
     --light-pink: #d77fbd;
+    --light-pink-trans: rgba(215, 127, 189, 0.75);
     --dark-pink: #e057c3;
     --dark-pink-trans: rgba(224, 87, 195, 0.85);
     --light-purple: #873776;
@@ -31,9 +32,32 @@
     padding: 0;
     border: none;
 }
+
 body {/** Set general background color and font **/
     background-color: var(--light-pink);
     font-family: var(--text-font);
+}
+
+.add-shadow {
+    box-shadow: 8px 8px 8px var(--off-black);
+}
+
+h1 {
+    font-size: 200%;
+}
+
+p {
+    font-size: 150%;
+}
+
+@media screen and (max-width: 1199px) {
+    h1 {
+        font-size: 150%;
+    }
+    
+    p {
+        font-size: 110%;
+    }
 }
 
 /** -------------------------------- HEADER -------------------------- **/
@@ -42,35 +66,33 @@ body {/** Set general background color and font **/
     position: absolute;
     right: 1%;
 }
+
 #logo{
     max-width: 200px;
 }
-.hor-break{
-    display: none;
-}
+
 #navbar{
     background-color: var(--dark-pink-trans);
 }
+
 .header-text{
     font-family: var(--header-font);
     font-size: 160%;
 }
+
 .active{
     border-bottom: 2px solid var(--text-color);
 }
+
 .nav-link:hover{
         color: var(--off-black) !important;
         border-bottom: 1px solid var(--off-black) !important;
 }
 
-
-@media screen and (min-width: 100px) and (max-width: 1199px) { 
+@media screen and (max-width: 1199px) { 
     .navbar-expand-xl .navbar-collapse {
         position: relative;
         right: 1%;
-    }
-    .hor-break{
-        display: flex;
     }
     #hide-small{
         display: none;
@@ -98,15 +120,18 @@ footer a:hover{
     color: var(--off-black);
     border-bottom: 1px solid var(--off-black);
 }
+
 .footer-text{
     font-family: var(--header-font);
     font-size: 140%;
 }
+
 @media screen and (min-width: 801px) and (max-width: 999px) { 
     .footer-text{
         font-size: 100%;
     }
 }
+
 @media screen and (min-width: 100px) and (max-width: 800px) { 
     .footer-text{
         font-size: 80%;
@@ -128,4 +153,8 @@ footer a:hover{
         background: url('../images/image3-land.png') no-repeat fixed top right / cover;
         min-height: 78vh;
     }
+}
+
+.jumbotron {
+    background-color: var(--light-pink-trans);
 }
