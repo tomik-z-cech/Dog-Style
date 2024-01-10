@@ -94,7 +94,7 @@ p {
         position: relative;
         right: 1%;
     }
-    #hide-small{
+    .hide-small{
         display: none;
     }
 }
@@ -126,15 +126,9 @@ footer a:hover{
     font-size: 140%;
 }
 
-@media screen and (min-width: 801px) and (max-width: 999px) { 
+@media screen and (max-width: 991px) { 
     .footer-text{
-        font-size: 100%;
-    }
-}
-
-@media screen and (min-width: 100px) and (max-width: 800px) { 
-    .footer-text{
-        font-size: 80%;
+        font-size: 150%;
     }
 }
 
@@ -192,8 +186,14 @@ input[type="radio"] {
 /* ------------------------- CONTACT --------------------------------- */
 
 .contact-link {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.contact-link:hover {
     color: var(--off-black);
     text-decoration: none;
+    border-bottom: 1px solid var(--off-black);
 }
 
 .map {
