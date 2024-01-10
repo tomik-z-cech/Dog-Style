@@ -41,18 +41,43 @@
     </header>
     <main class="wrapper container d-flex justify-content-center align-items-center">
         <div class="jumbotron-touch add-shadow p-3 text-center mt-3 mb-3">
-            <h1 class="py-4"><strong>Gallery</strong></h1>
-            <img src="assets/images/image1.jpeg" alt="Image 1" class="add-shadow for-zoom">
-            <img src="assets/images/image2.jpeg" alt="Image 2" class="add-shadow for-zoom">
-            <img src="assets/images/image3.jpeg" alt="Image 3" class="add-shadow for-zoom">
-            <img src="assets/images/image4.jpeg" alt="Image 4" class="add-shadow for-zoom">
-            <img src="assets/images/image5.jpeg" alt="Image 5" class="add-shadow for-zoom">
-            <img src="assets/images/image6.jpeg" alt="Image 6" class="add-shadow for-zoom">
-            <img src="assets/images/image7.jpeg" alt="Image 7" class="add-shadow for-zoom">
-            <img src="assets/images/image8.jpeg" alt="Image 8" class="add-shadow for-zoom">
-            <img src="assets/images/image9.jpeg" alt="Image 9" class="add-shadow for-zoom">
-            <img src="assets/images/image10.jpeg" alt="Image 10" class="add-shadow for-zoom">
-            <img src="assets/images/image11.jpeg" alt="Image 11" class="add-shadow for-zoom">
+            <div class="row text-end">
+            <i
+                class="bi bi-x-circle-fill zoom-nav-element"
+                id="zoom-close"
+            ></i>
+            </div>
+            <div class="row">
+            <div
+                class="col-md-12 text-center pb-3 pt-3"
+                id="desc-container"
+            ></div>
+            <div class="row">
+                <div
+                class="col-md-12 d-flex justify-content-center align-items-center pb-3"
+                id="photo-container"
+                ></div>
+            </div>
+            <div class="row text-center" id="zoom-nav">
+                <div class="col-md-12 pt-3">
+                <i
+                    class="bi bi-skip-start-fill zoom-nav-element"
+                    id="pic-start"
+                ></i>
+                <i
+                    class="bi bi-arrow-left-circle-fill zoom-nav-element"
+                    id="pic-minus"
+                ></i>
+                <i
+                    class="bi bi-arrow-right-circle-fill zoom-nav-element"
+                    id="pic-plus"
+                ></i>
+                <i
+                    class="bi bi-skip-end-fill zoom-nav-element"
+                    id="pic-end"
+                ></i>
+                </div>
+            </div>
         </div>
     </main>
     <footer class="text-center">
@@ -96,6 +121,6 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="assets/js/gallery.js"></script>
+    <script src="assets/js/zoom.js"></script>
 </body>
 </html>

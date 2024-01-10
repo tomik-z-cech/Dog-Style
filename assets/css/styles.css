@@ -211,15 +211,21 @@ ul {
 
 /* ------------------------- GALLERY --------------------------------- */
 
-.jumbotron-touch img {
+.for-zoom {
     width: 100%;
     max-width: 300px;
     height: auto;
     margin: 1vh;
     border: 2px solid var(--off-black);
     transition: 0.3s;
-  }
+    cursor: pointer;
+}
 
-  .jumbotron-touch img:hover {
+.for-zoom:hover {
     transform: scale(1.1);
-  }
+}
+
+.zoom-nav-element {
+    font-size: 200%;
+    cursor: pointer;
+}
