@@ -158,3 +158,33 @@ footer a:hover{
 .jumbotron {
     background-color: var(--light-pink-trans);
 }
+
+/* ------------------------- TOUCH --------------------------------- */
+
+.form-label {
+    color: var(--off-black);
+    font-weight: 800;
+}
+
+.jumbotron-touch {
+    background-color: var(--light-pink-trans);
+    min-width: 50vw;
+}
+
+#user-input-name, #user-input-email, #user-input-number, #user-contact-message {
+    background: none;
+    border: 2px solid var(--off-black);
+}
+
+#user-input-name::placeholder, #user-input-email::placeholder, #user-input-number::placeholder, #user-contact-message::placeholder {
+    color: var(--off-black);
+}
+
+input[type="radio"] {
+    accent-color: var(--off-black);
+}
+
+.button-shadow {
+    box-shadow: 3px 3px 3px var(--off-black);
+    border: 2px solid var(--off-black)
+}
