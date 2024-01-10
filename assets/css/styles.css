@@ -16,10 +16,23 @@
     --text-color: #381c32;
     --off-black: #111111;
     --lighter-black: #2a2a2a;
-    
+
     /** FONTS **/
     --header-font: 'Agbalumo', sans-serif;
     --text-font: 'Josefin Sans', arial;
+}
+
+::-webkit-scrollbar {/** Scrollbar styling **/
+    width: 0.75vw;
+}
+::-webkit-scrollbar-track {/** Scrollbar styling **/
+    background: var(--dark-pink);
+}
+::-webkit-scrollbar-thumb {/** Scrollbar styling **/
+    background: var(--dark-purple);
+}
+::-webkit-scrollbar-thumb:hover {/** Scrollbar styling **/
+    background: var(--light-purple);
 }
 
 /** ------------------------------------------------------------------------------- **/
