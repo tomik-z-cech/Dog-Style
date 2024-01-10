@@ -188,3 +188,9 @@ input[type="radio"] {
     box-shadow: 3px 3px 3px var(--off-black);
     border: 2px solid var(--off-black)
 }
+
+/* ------------------------- CONTACT --------------------------------- */
+
+.address-ul {
+    list-style-type: none;
+}
