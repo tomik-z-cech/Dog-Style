@@ -3,6 +3,10 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 // Include the PHPMailer autoloader
 require 'vendor/autoload.php'; // Replace with the actual path
 
