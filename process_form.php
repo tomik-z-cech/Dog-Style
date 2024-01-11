@@ -26,6 +26,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 } else {
     // Invalid request method
-    echo "error";
+    echo "error invalid method";
 }
 ?>
