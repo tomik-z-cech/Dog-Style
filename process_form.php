@@ -1,7 +1,7 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
+use vendor\phpmailer\phpmailer\src\PHPMailer;
+use vendor\phpmailer\phpmailer\src\SMTP;
+use vendor\phpmailer\phpmailer\src\Exception;
 
 
 error_reporting(E_ALL);
