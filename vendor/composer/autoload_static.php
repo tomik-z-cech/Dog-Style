@@ -17,6 +17,7 @@ class ComposerStaticInit92f5005ee5bf7f2a80e99f166b1f2e55
         'PHPMailer\\PHPMailer\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+            1 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
     );
 
