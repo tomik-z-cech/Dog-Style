@@ -4,7 +4,7 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 // Include the PHPMailer autoloader
-require 'path/to/your/phpmailer/autoload.php'; // Replace with the actual path
+require 'vendor/autoload.php'; // Replace with the actual path
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data
@@ -20,16 +20,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // Configure the PHPMailer instance
         $mail->isSMTP(); // Set mailer to use SMTP
-        $mail->Host = 'your-smtp-host'; // Replace with your SMTP host
+        $mail->Host = 'smtp.gmail.com'; // Replace with your SMTP host
         $mail->SMTPAuth = true; // Enable SMTP authentication
-        $mail->Username = 'your-smtp-username'; // Replace with your SMTP username
-        $mail->Password = 'your-smtp-password'; // Replace with your SMTP password
+        $mail->Username = 'dogstyleloughrea@gmail.com'; // Replace with your SMTP username
+        $mail->Password = 'dogstyle12345*'; // Replace with your SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption
         $mail->Port = 587; // TCP port to connect to
 
         // Set the sender and recipient addresses
         $mail->setFrom($email, $name);
-        $mail->addAddress('recipient@example.com'); // Replace with your recipient email address
+        $mail->addAddress('dogstyleloughrea@gmail.com'); // Replace with your recipient email address
 
         // Set email subject and body
         $mail->Subject = "New Form Submission from $name";
