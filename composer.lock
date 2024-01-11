@@ -1,9 +1,14 @@
 {
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "3e930cd482bf60b5397975854dad8256",
     "packages": [
         {
             "name": "heroku/heroku-buildpack-php",
             "version": "v231",
-            "version_normalized": "231.0.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
@@ -15,13 +20,11 @@
                 "reference": "5c628e7e989e9d96d742bea67f3245bebe5fc7be",
                 "shasum": ""
             },
-            "time": "2023-02-14T21:03:27+00:00",
             "bin": [
                 "bin/heroku-php-apache2",
                 "bin/heroku-php-nginx"
             ],
             "type": "library",
-            "installation-source": "source",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -46,9 +49,16 @@
                 "issues": "https://github.com/heroku/heroku-buildpack-php/issues",
                 "source": "https://github.com/heroku/heroku-buildpack-php/tree/v231"
             },
-            "install-path": "../heroku/heroku-buildpack-php"
+            "time": "2023-02-14T21:03:27+00:00"
         }
     ],
-    "dev": true,
-    "dev-package-names": []
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
 }
